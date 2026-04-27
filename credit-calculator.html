@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кредит — BlackBank</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/credit-calculator.css">
+</head>
+<body>
+
+    <header>
+        <a href="main.html" class="luxury">BlackBank</a>
+    </header>
+
+    <main class="container">
+        <h1>Калькулятор кредита — 17.5% годовых</h1>
+
+        <div class="calc-form">
+            <div class="input-group">
+                <label for="loanAmount">Сумма кредита (₽)</label>
+                <input type="number" id="loanAmount" placeholder="Например: 500000">
+            </div>
+            
+            <div class="input-group">
+                <label for="loanMonths">Срок (в месяцах)</label>
+                <input type="number" id="loanMonths" placeholder="Например: 12">
+            </div>
+
+            <button id="calcBtn">Рассчитать платёж</button>
+        </div>
+
+        <h2 id="loanResult" class="result-display"></h2>
+    </main>
+
+    <script src="js/credit-calculator.js"></script>
+</body>
+</html>

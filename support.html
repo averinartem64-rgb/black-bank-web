@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поддержка — BlackBank</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/support.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container nav-bar">
+        <div class="nav-left">
+            <a href="main.html" class="logo luxury-logo"><span>BlackBank</span></a>
+        </div>
+        <div class="nav-right">
+            <a href="#" class="login-btn"><i class="fas fa-user"></i> Личный кабинет</a>
+        </div>
+    </div>
+</header>
+
+<!-- КНОПКА НАЗАД -->
+<div class="back-wrapper container">
+    <a href="main.html" class="back-btn">
+        <i class="fas fa-arrow-left"></i> На главную
+    </a>
+</div>
+
+<main>
+
+    <!-- HERO -->
+    <section class="support-hero container">
+        <h1>ПОДДЕРЖКА <span class="highlight">24/7</span></h1>
+        <p>Мы отвечаем даже в самую тёмную ночь.</p>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section class="support-contacts container">
+
+        <div class="support-card">
+            <i class="fas fa-phone"></i>
+            <h3>Телефон</h3>
+            <p>+7 (777) 666‑08‑76</p>
+        </div>
+
+        <div class="support-card">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>support@bbank.ru</p>
+        </div>
+
+        <div class="support-card">
+            <i class="fas fa-comment-dots"></i>
+            <h3>Онлайн-чат</h3>
+            <p>Работает 24/7 без перерывов</p>
+        </div>
+
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq container">
+        <h2>Частые вопросы</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">Как открыть счёт?</div>
+            <div class="faq-answer">Вы можете открыть счёт онлайн за 5 минут в личном кабинете.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Как восстановить пароль?</div>
+            <div class="faq-answer">Нажмите «Забыли пароль» на странице входа и следуйте инструкции.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Какая комиссия за переводы?</div>
+            <div class="faq-answer">Внутри банка — 0₽. На другие банки — от 1%.</div>
+        </div>
+
+    </section>
+
+    <!-- ФОРМА -->
+    <section class="support-form-section container">
+        <h2>Написать нам</h2>
+
+        <form class="support-form" id="supportForm">
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Ваш вопрос..." required></textarea>
+            <button type="submit" class="support-btn">Отправить</button>
+        </form>
+
+        <p class="support-message" id="supportMessage"></p>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-links">
+            <a href="#">О банке</a>
+            <a href="#">Реквизиты</a>
+            <a href="#">Безопасность</a>
+        </div>
+        <div class="footer-contacts">
+            <span><i class="fas fa-phone-alt"></i> +7(777)-666-08-76</span>
+            <span><i class="fas fa-envelope"></i> black@bbank.ru</span>
+            <span><i class="fas fa-map-marker-alt"></i> Нижний Новгород, ул. Тёмная, 1</span>
+        </div>
+    </div>
+</footer>
+
+<script src="js/support.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
