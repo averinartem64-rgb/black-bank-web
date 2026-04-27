@@ -1,0 +1,72 @@
+/* ===== HERO ===== */
+
+.branches-hero {
+    text-align: center;
+    padding: 100px 20px 60px;
+}
+
+.branches-hero h1 {
+    font-size: 2.6rem;
+    letter-spacing: 2px;
+}
+
+.highlight {
+    background-color: #2a2a2a;
+    padding: 8px 18px;
+    border-radius: 12px;
+}
+
+.branches-hero p {
+    margin-top: 20px;
+    color: #aaa;
+}
+
+/* ===== КАРТА ===== */
+
+.branches-map {
+    margin-bottom: 60px;
+}
+
+.branches-map iframe {
+    border-radius: 20px;
+    border: 1px solid #2a2a2a;
+}
+
+/* ===== КАРТОЧКИ ===== */
+
+.branches-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding-bottom: 80px;
+}
+
+.branch-card {
+    background: #121212;
+    border: 1px solid #2a2a2a;
+    border-radius: 20px;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.branch-card h3 {
+    margin-bottom: 15px;
+}
+
+.branch-card p {
+    color: #aaa;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.branch-card i {
+    color: #777;
+}
+
+.branch-card:hover {
+    transform: translateY(-8px);
+    border-color: #444;
+}

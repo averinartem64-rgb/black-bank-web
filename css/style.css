@@ -1,0 +1,182 @@
+/* Базовый сброс и шрифты */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: #0a0a0a; /* Глубокий чёрный из референса */
+    color: #e0e0e0;           /* Светлый серый для текста */
+    font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+}
+
+/* Обнуляем ссылки (убираем синий цвет и подчеркивание) */
+a { text-decoration: none; color: inherit; transition: color 0.2s; }
+
+/* Контейнер для центрирования содержимого */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== ХЕДЕР (Sticky с полупрозрачностью) ===== */
+.header {
+    background-color: rgba(17, 17, 17, 0.95); /* Чуть светлее фона и прозрачен */
+    border-bottom: 1px solid #2a2a2a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(5px); /* Легкое размытие под хедером */
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+}
+
+/* Левая часть (Логотип и Меню) */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Твой сложный градиентный логотип */
+.luxury-logo span {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #8f8f8f 0%, #e5e5e5 25%, #bfbfbf 50%, #f2f2f2 75%, #8f8f8f 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Меню (Центрированное) */
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
+}
+
+.menu-link {
+    font-weight: 500;
+    color: #cccccc;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.menu-link:hover { color: #fff; }
+.menu-link i { font-size: 0.8rem; color: #777; } /* Иконка стрелки */
+
+/* Выпадающее меню (Dropdown) */
+.menu-item { position: relative; padding: 0.5rem 0; }
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    min-width: 200px;
+    padding: 0.75rem 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.2s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.7);
+}
+
+.menu-item:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 0.5rem 1.5rem;
+    color: #bbb;
+    font-size: 0.9rem;
+    transition: 0.15s;
+}
+
+.dropdown-content a:hover {
+    background-color: #2a2a2a;
+    color: white;
+}
+
+/* Правая часть (Личный кабинет) */
+.login-btn {
+    background-color: #2a2a2a;
+    padding: 0.5rem 1.5rem;
+    border-radius: 40px;
+    font-weight: 600;
+    border: 1px solid #444;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.login-btn i { color: #aaa; }
+.login-btn:hover { background-color: #3a3a3a; border-color: #666; }
+
+/* ===== ФУТЕР (Точно как на фото) ===== */
+.footer {
+    background-color: #0c0c0c;
+    border-top: 1px solid #252525;
+    padding: 2.5rem 0;
+    color: #aaa;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer-links a { margin-right: 2rem; font-size: 0.95rem; color: #bbb;}
+.footer-links a:hover { color: white; }
+
+.footer-contacts { display: flex; gap: 2rem; font-size: 0.95rem; color: #ccc;}
+.footer-contacts span { display: flex; align-items: center; gap: 8px; }
+.footer-contacts i { color: #777; width: 18px;}
+/* ===== КНОПКА НАЗАД ===== */
+
+.back-wrapper {
+    margin-top: 30px;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: #121212;
+    border: 1px solid #2a2a2a;
+    color: #ccc;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+    .back-btn i {
+        font-size: 0.8rem;
+        color: #888;
+    }
+
+    .back-btn:hover {
+        background: #1f1f1f;
+        border-color: #444;
+        color: #fff;
+    }

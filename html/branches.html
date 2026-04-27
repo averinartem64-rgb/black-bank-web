@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отделения и банкоматы — BlackBank</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/branches.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container nav-bar">
+        <div class="nav-left">
+            <a href="main.html" class="logo luxury-logo"><span>BlackBank</span></a>
+        </div>
+        <div class="nav-right">
+            <a href="#" class="login-btn"><i class="fas fa-user"></i> Личный кабинет</a>
+        </div>
+    </div>
+</header>
+<div class="back-wrapper container">
+    <a href="main.html" class="back-btn">
+        <i class="fas fa-arrow-left"></i> На главную
+    </a>
+</div>
+<main>
+
+    <!-- HERO -->
+    <section class="branches-hero container">
+        <h1>ОТДЕЛЕНИЯ <span class="highlight">И БАНКОМАТЫ</span></h1>
+        <p>Мы ближе, чем кажется. Даже в темноте.</p>
+    </section>
+
+    <!-- КАРТА -->
+    <section class="branches-map container">
+        <iframe 
+            src="https://yandex.ru/map-widget/v1/?ll=44.0020%2C56.3269&z=12"
+            width="100%" 
+            height="400" 
+            frameborder="0"
+            allowfullscreen="true">
+        </iframe>
+    </section>
+
+    <!-- СПИСОК ОТДЕЛЕНИЙ -->
+    <section class="branches-list container">
+
+        <div class="branch-card">
+            <h3>Главное отделение</h3>
+            <p><i class="fas fa-map-marker-alt"></i> ул. Тёмная, 1</p>
+            <p><i class="fas fa-clock"></i> Пн–Пт: 9:00–20:00</p>
+        </div>
+
+        <div class="branch-card">
+            <h3>Отделение «Север»</h3>
+            <p><i class="fas fa-map-marker-alt"></i> ул. Полярная, 13</p>
+            <p><i class="fas fa-clock"></i> Пн–Сб: 10:00–19:00</p>
+        </div>
+
+        <div class="branch-card">
+            <h3>Отделение «Центр»</h3>
+            <p><i class="fas fa-map-marker-alt"></i> пр. Чёрный, 45</p>
+            <p><i class="fas fa-clock"></i> Ежедневно: 9:00–21:00</p>
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-links">
+            <a href="#">О банке</a>
+            <a href="#">Реквизиты</a>
+            <a href="#">Безопасность</a>
+        </div>
+        <div class="footer-contacts">
+            <span><i class="fas fa-phone-alt"></i> +7(777)-666-08-76</span>
+            <span><i class="fas fa-envelope"></i> black@bbank.ru</span>
+            <span><i class="fas fa-map-marker-alt"></i> Нижний Новгород, ул. Тёмная, 1</span>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
